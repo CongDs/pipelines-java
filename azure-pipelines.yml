@@ -5,6 +5,7 @@
 
 trigger:
 - master
+- feature/*
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -24,5 +25,6 @@ steps:
     echo Starting the build
     mvn clean install -DskipTests
     docker pull nginx:latest
+    echo "tao muon list images"
     docker images 
   displayName: 'Build with Maven'
