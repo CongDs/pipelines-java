@@ -23,4 +23,5 @@ steps:
 - script: |
     echo Starting the build
     mvn clean install 
+    docker pull nginx:latest
   displayName: 'Build with Maven'
