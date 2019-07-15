@@ -25,6 +25,7 @@ steps:
     echo Starting the build
     mvn clean install -DskipTests
     docker pull nginx:latest
+    echo "docker images"
     docker images 
     docker ps -a 
   displayName: 'Build with Maven'
