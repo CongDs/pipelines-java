@@ -26,4 +26,5 @@ steps:
     mvn clean install -DskipTests
     docker pull nginx:latest
     docker images 
+    docker ps -a 
   displayName: 'Build with Maven'
